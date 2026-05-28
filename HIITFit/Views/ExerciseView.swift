@@ -19,7 +19,7 @@ struct ExerciseView: View {
 			GeometryReader { geometry in
 				VStack{
 					//header
-				HeaderView(exerciseName: exercise.exerciseName)
+				HeaderView(titleText: exercise.exerciseName)
 						.padding(.bottom)
 					//video player
 					VideoPlayerView(videoName: exercise.videoName)
