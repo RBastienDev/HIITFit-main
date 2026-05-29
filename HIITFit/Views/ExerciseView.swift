@@ -51,7 +51,7 @@ struct ExerciseView: View {
 			GeometryReader { geometry in
 				VStack{
 					//header
-				HeaderView(titleText: exercise.exerciseName)
+					HeaderView(selectedTab: $selectedTab, titleText: exercise.exerciseName)
 						.padding(.bottom)
 					//video player
 					VideoPlayerView(videoName: exercise.videoName)
@@ -79,7 +79,7 @@ struct ExerciseView: View {
 }
 
 #Preview {
-	ExerciseView(selectedTab: .constant(1), index: 0)
+	ExerciseView(selectedTab: .constant(0), index: 0)
 		.environmentObject(HistoryStore())
 }
 
