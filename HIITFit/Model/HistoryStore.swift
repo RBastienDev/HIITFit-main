@@ -9,7 +9,7 @@ struct ExerciseDay: Identifiable {
 	
 }
 
-struct HistoryStore {
+class HistoryStore: ObservableObject {
 	var exerciseDays: [ExerciseDay] = []
 	
 			init(){
@@ -17,6 +17,10 @@ struct HistoryStore {
 				createDevData()
 				#endif
 		}
+	
+	func addDoneExercise(_ exerciseName: String){
+		
+	}
 }
 
 
