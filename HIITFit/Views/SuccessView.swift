@@ -24,7 +24,7 @@ struct SuccessView: View {
 				}
 				VStack{
 						Spacer()
-					Button("Continue") {
+						Button("Continue") {
 							selectedTab = 9
 							dismiss()
 							
